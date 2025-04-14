@@ -1,11 +1,11 @@
 import Restaurant from "./Restaurant.jsx";
-import data from '../data/data.js';
+import { restaurants } from '../data/data.js';
 
 function RestaurantsContainer() {
   return (
     <div className="restaurantContainer">
 
-      {data.map((restaurant) => ( <Restaurant restaurant={restaurant} key={restaurant.id}/>))}    
+      {restaurants.map((restaurant) => ( <Restaurant restaurant={restaurant} key={restaurant.id}/>))}    
       
     </div>
   );
